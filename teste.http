@@ -1,0 +1,57 @@
+POST http://localhost:3333/usuario
+Content-Type: application/json
+
+{
+    "cdempresa": "0302",
+    "nome": "JOAO",
+    "email": "emailjoal",
+    "senha": "joao"
+}
+
+###
+GET http://localhost:3333/usuario/0302/emailsergio
+
+###
+PUT http://localhost:3333/usuario/17
+Content-Type: application/json
+
+{
+    "nome": "JOAO",
+    "email": "emailjoaoalt",
+    "senha": "444444alt"
+}
+
+###
+DELETE http://localhost:3333/usuario/16
+
+### res_vdas
+GET http://localhost:3333/res_vdas/0302
+
+### res_pedidos
+GET http://localhost:3333/res_pedidos/0302
+
+### efi_producao
+GET http://localhost:3333/efi_producao/0302
+
+### res_entregas
+GET http://localhost:3333/res_entregas/0302
+
+### res_rnc
+GET http://localhost:3333/res_rnc/0302
+
+### fatur_devol
+GET http://localhost:3333/fatur_devol/0302
+
+###
+GET http://localhost:3333/fatur_devol/0302/16 a 30 dias
+
+### ped_pend
+GET http://localhost:3333/ped_pend/classif/0302/ 0 a 07 dias
+###
+GET http://localhost:3333/ped_pend/status/0302/EM_PROD
+
+### detalh_entregas
+GET http://localhost:3333/detalh_entregas/0302/ 0 a 07 dias
+
+### rnc
+GET http://localhost:3333/rnc/0302/produto
