@@ -40,7 +40,7 @@ GET http://localhost:3333/res_entregas/0302
 GET http://localhost:3333/res_rnc/0302
 
 ### fatur_devol
-GET http://localhost:3333/fatur_devol/0302
+GET http://3.139.98.69:3333/fatur_devol/0302
 
 ###
 GET http://localhost:3333/fatur_devol/0302/16 a 30 dias
@@ -55,3 +55,15 @@ GET http://localhost:3333/detalh_entregas/0302/ 0 a 07 dias
 
 ### rnc
 GET http://localhost:3333/rnc/0302/produto
+
+### hsvda_periodo
+GET http://localhost:3333/hsvda_periodo/0302
+
+### hsvda_marcas
+GET http://localhost:3333/hsvda_marcas/0302
+
+### hsvda_marxmes
+GET http://localhost:3333/hsvda_marxmes/0302/CORINTER
+
+### hsvda_marxsub
+GET http://localhost:3333/hsvda_marxsub/0302/CORINTER

@@ -1,0 +1,5 @@
+Para rodar:
+- npm run dev
+
+Carregar o backend para a instancia na AWS
+

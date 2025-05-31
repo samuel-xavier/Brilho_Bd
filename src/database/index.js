@@ -11,6 +11,10 @@ const Fatur_devol = require('../models/Fatur_devol');
 const Ped_pend = require('../models/Ped_pend');
 const Detalh_entregas = require('../models/Detalh_entregas');
 const Rnc = require('../models/Rnc');
+const Hsvda_marcas = require('../models/Hsvda_marcas');
+const Hsvda_marxmes = require('../models/Hsvda_marxmes');
+const Hsvda_marxsub = require('../models/Hsvda_marxsub');
+const Hsvda_periodo = require('../models/Hsvda_periodo');
 
 const connection = new Sequelize(dbConfig);
 
@@ -24,5 +28,9 @@ Fatur_devol.init(connection);
 Ped_pend.init(connection);
 Detalh_entregas.init(connection);
 Rnc.init(connection);
+Hsvda_marcas.init(connection);
+Hsvda_marxmes.init(connection);
+Hsvda_marxsub.init(connection);
+Hsvda_periodo.init(connection);
 
 module.exports = connection;

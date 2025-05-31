@@ -10,6 +10,10 @@ const Fatur_devolController = require('./controllers/Fatur_devolController');
 const Ped_pendController = require('./controllers/Ped_pendController');
 const Detalh_entregasController = require('./controllers/Detalh_entregasController');
 const RncController = require('./controllers/RncController');
+const Hsvda_marcasController = require('./controllers/Hsvda_marcasController');
+const Hsvda_marxmesController = require('./controllers/Hsvda_marxmesController');
+const Hsvda_marxsubController = require('./controllers/Hsvda_marxsubController');
+const Hsvda_periodoController = require('./controllers/Hsvda_periodoController');
 
 const routes = express.Router();
 
@@ -47,6 +51,18 @@ routes.get('/detalh_entregas/:cdempresa/:classif', Detalh_entregasController.ind
 
 routes.get('/rnc', RncController.index);
 routes.get('/rnc/:cdempresa/:classif', RncController.index_one);
+
+routes.get('/hsvda_periodo', Hsvda_periodoController.index);
+routes.get('/hsvda_periodo/:cdempresa', Hsvda_periodoController.index_one);
+
+routes.get('/hsvda_marcas', Hsvda_marcasController.index);
+routes.get('/hsvda_marcas/:cdempresa', Hsvda_marcasController.index_one);
+
+routes.get('/hsvda_marxmes', Hsvda_marxmesController.index);
+routes.get('/hsvda_marxmes/:cdempresa/:marca', Hsvda_marxmesController.index_one);
+
+routes.get('/hsvda_marxsub', Hsvda_marxsubController.index);
+routes.get('/hsvda_marxsub/:cdempresa/:marca', Hsvda_marxsubController.index_one);
 
 //routes.get('/empresa', EmpresaController.index);
 //routes.get('/empresa/:cdempresa', EmpresaController.index_one);
