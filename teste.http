@@ -27,8 +27,13 @@ DELETE http://localhost:3333/usuario/16
 ### res_vdas
 GET http://localhost:3333/res_vdas/0302
 
+
 ### res_pedidos
 GET http://localhost:3333/res_pedidos/0302
+
+
+### res_pedfutur
+GET http://localhost:3333/res_pedfutur/0302
 
 ### efi_producao
 GET http://localhost:3333/efi_producao/0302

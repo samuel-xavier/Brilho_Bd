@@ -1,5 +1,38 @@
-Para rodar:
+Para rodar local:
 - npm run dev
 
-Carregar o backend para a instancia na AWS
+CARREGAR O BACKEND PARA INSTANCIA EC2 AWS
+=========================================
 
+Conexão (no diretório C:\DADOS\REACT NATIVE 2025\CONEXAOAWS\ que tem a chave SSH AWS_Brilho_Bd.pem):
+- ssh -i "AWS_Brilho_Bd.pem" ubuntu@ec2-3-139-98-69.us-east-2.compute.amazonaws.com
+
+Instalar os programas necessários (se não existir : node / pm2 / etc)
+- documentação apoio:
+  - O jeito mais fácil de subir uma aplicação NODE.JS para um servidor DE GRAÇA! | AWS EC2
+  - https://www.youtube.com/watch?v=u-o7cqzK6u8&t=922s
+
+Listar as aplicações em execução
+- pm2 list
+
+Para parar a aplicação:
+- pm2 stop Brilho
+
+Para remover o diretório do backend (se houver)
+- rm -r nome_do_diretorio
+
+Para clonar o projeto do repositório do GitHub
+- git clone https://github.com/samuel-xavier/Brilho_Bd.git Brilho_Bd
+  - https://github.com/samuel-xavier/Brilho_Bd.git : é o comando clone disponível no repositorio do GitHub
+  - Brilho_Bd : nome do diretório a ser criado para baixar o clone
+
+Criar o node.modules
+- no diretório do projeto
+- npm install
+
+Rodar o Backend:
+- cd Brilho_Bd
+- pm2 start src/server.js --name=Brilho
+
+Listar as aplicações em execução
+- pm2 list

@@ -3,6 +3,7 @@ const express = require('express');
 const UsuarioController = require('./controllers/UsuarioController');
 const Res_vdasController = require('./controllers/Res_vdasController');
 const Res_pedidosController = require('./controllers/Res_pedidosController');
+const Res_pedfuturController = require('./controllers/Res_pedfuturController');
 const Efi_producaoController = require('./controllers/Efi_producaoController');
 const Res_entregasController = require('./controllers/Res_entregasController');
 const Res_rncController = require('./controllers/Res_rncController');
@@ -28,6 +29,9 @@ routes.get('/res_vdas/:cdempresa', Res_vdasController.index_one);
 
 routes.get('/res_pedidos', Res_pedidosController.index);
 routes.get('/res_pedidos/:cdempresa', Res_pedidosController.index_one);
+
+routes.get('/res_pedfutur', Res_pedfuturController.index);
+routes.get('/res_pedfutur/:cdempresa', Res_pedfuturController.index_one);
 
 routes.get('/efi_producao', Efi_producaoController.index);
 routes.get('/efi_producao/:cdempresa', Efi_producaoController.index_one);
