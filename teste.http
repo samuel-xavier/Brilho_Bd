@@ -29,7 +29,7 @@ GET http://localhost:3333/res_vdas/0302
 
 
 ### res_pedidos
-GET http://localhost:3333/res_pedidos/0302
+GET http://localhost:3333/res_pedidos/0302/
 
 
 ### res_pedfutur
@@ -54,6 +54,8 @@ GET http://localhost:3333/fatur_devol/0302/16 a 30 dias
 GET http://localhost:3333/ped_pend/classif/0302/ 0 a 07 dias
 ###
 GET http://localhost:3333/ped_pend/status/0302/EM_PROD
+###
+GET http://localhost:3333/ped_pend/status/0302/PEND_FUTUR/202508
 
 ### detalh_entregas
 GET http://localhost:3333/detalh_entregas/0302/ 0 a 07 dias

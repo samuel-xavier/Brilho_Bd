@@ -49,6 +49,7 @@ routes.get('/fatur_devol/:cdempresa/:classif', Fatur_devolController.index_class
 routes.get('/ped_pend', Ped_pendController.index);
 routes.get('/ped_pend/classif/:cdempresa/:classif', Ped_pendController.index_classif);
 routes.get('/ped_pend/status/:cdempresa/:status', Ped_pendController.index_status);
+routes.get('/ped_pend/status/:cdempresa/:status/:periodo', Ped_pendController.index_statusxperiodo);
 
 routes.get('/detalh_entregas', Detalh_entregasController.index);
 routes.get('/detalh_entregas/:cdempresa/:classif', Detalh_entregasController.index_one);
