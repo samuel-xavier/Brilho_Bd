@@ -15,6 +15,9 @@ const Hsvda_marcasController = require('./controllers/Hsvda_marcasController');
 const Hsvda_marxmesController = require('./controllers/Hsvda_marxmesController');
 const Hsvda_marxsubController = require('./controllers/Hsvda_marxsubController');
 const Hsvda_periodoController = require('./controllers/Hsvda_periodoController');
+const Prd_acomp_resController = require('./controllers/Prd_acomp_resController');
+const Prd_acomp_progsController = require('./controllers/Prd_acomp_progsController');
+const Prd_acomp_linhaController = require('./controllers/Prd_acomp_linhaController');
 
 const routes = express.Router();
 
@@ -68,6 +71,15 @@ routes.get('/hsvda_marxmes/:cdempresa/:marca', Hsvda_marxmesController.index_one
 
 routes.get('/hsvda_marxsub', Hsvda_marxsubController.index);
 routes.get('/hsvda_marxsub/:cdempresa/:marca', Hsvda_marxsubController.index_one);
+
+routes.get('/prd_acomp_res', Prd_acomp_resController.index);
+routes.get('/prd_acomp_res/:cdempresa', Prd_acomp_resController.index_one);
+
+routes.get('/prd_acomp_progs', Prd_acomp_progsController.index);
+routes.get('/prd_acomp_progs/:cdempresa', Prd_acomp_progsController.index_one);
+
+routes.get('/prd_acomp_linha', Prd_acomp_linhaController.index);
+routes.get('/prd_acomp_linha/:cdempresa/:setor', Prd_acomp_linhaController.index_one);
 
 //routes.get('/empresa', EmpresaController.index);
 //routes.get('/empresa/:cdempresa', EmpresaController.index_one);

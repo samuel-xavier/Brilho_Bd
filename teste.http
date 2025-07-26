@@ -74,3 +74,12 @@ GET http://localhost:3333/hsvda_marxmes/0302/CORINTER
 
 ### hsvda_marxsub
 GET http://localhost:3333/hsvda_marxsub/0302/CORINTER
+
+### prd_acomp_res
+GET http://localhost:3333/prd_acomp_res/0302
+
+### prd_acomp_progs
+GET http://localhost:3333/prd_acomp_progs/0302
+
+### prd_acomp_linha
+GET http://localhost:3333/prd_acomp_linha/0302/EMBALAGEM

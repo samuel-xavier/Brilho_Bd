@@ -16,6 +16,9 @@ const Hsvda_marcas = require('../models/Hsvda_marcas');
 const Hsvda_marxmes = require('../models/Hsvda_marxmes');
 const Hsvda_marxsub = require('../models/Hsvda_marxsub');
 const Hsvda_periodo = require('../models/Hsvda_periodo');
+const Prd_acomp_res = require('../models/Prd_acomp_res');
+const Prd_acomp_progs = require('../models/Prd_acomp_progs');
+const Prd_acomp_linha = require('../models/Prd_acomp_linha');
 
 const connection = new Sequelize(dbConfig);
 
@@ -34,5 +37,8 @@ Hsvda_marcas.init(connection);
 Hsvda_marxmes.init(connection);
 Hsvda_marxsub.init(connection);
 Hsvda_periodo.init(connection);
+Prd_acomp_res.init(connection);
+Prd_acomp_progs.init(connection);
+Prd_acomp_linha.init(connection);
 
 module.exports = connection;
